@@ -10,5 +10,7 @@ public class Test4 {
         System.out.println("第四次测试");
         System.out.println("第四次测试");
         System.out.println("第四次测试");
+        System.out.println("第四次测试");
+        System.out.println("第四次测试");
     }
 }
