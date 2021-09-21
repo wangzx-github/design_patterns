@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+abstract class OrganizationComponent{
+private String name
+private String des
+public void add()
+public void remove()
+public void print()
+}
+note as details
+  适合：需要遍历组织机构，或者处理的对象具有树形结
+  构时，同具有很多的共性
+  不适合：叶子节点和非叶子节点有很高的差别
+
+end note
+
+class College
+class Department
+class University
+Class Client
+
+College --|> OrganizationComponent
+Department --|> OrganizationComponent
+University --|> OrganizationComponent
+Department --* College
+College --* University
+Client ..> OrganizationComponent
+
+@enduml

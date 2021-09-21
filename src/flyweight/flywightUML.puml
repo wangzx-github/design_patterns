@@ -1,0 +1,23 @@
+@startuml
+class Website{
+void use()
+
+}
+class ConcreteWebsite{
+void use()
+}
+class Websitefactory{
+void getWebsiteCategory()
+}
+class Client
+class User
+
+
+ConcreteWebsite --|> Website
+Website --* Websitefactory
+Client --> Websitefactory
+Client --> ConcreteWebsite
+Client --> User
+ConcreteWebsite --> User
+
+@enduml

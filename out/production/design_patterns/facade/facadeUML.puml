@@ -1,0 +1,21 @@
+@startuml
+
+note as details
+  当系统需要进行分层设计时，可以考虑外观模式
+  不要过度使用外观模式
+  本质：就是抽象一个更高层调用子模块
+
+end note
+
+class 外观类
+class 子系统1
+class 子系统2
+class 子系统3
+class Client
+
+子系统1 --* 外观类
+子系统2 --* 外观类
+子系统3 --* 外观类
+Client --> 外观类
+
+@enduml
