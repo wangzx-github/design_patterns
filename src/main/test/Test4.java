@@ -7,5 +7,8 @@ package main.test;
 public class Test4 {
     public static void main(String[] args) {
         System.out.println("第四次测试");
+        System.out.println("44455555555555555次测试");
+        System.out.println("第四次测试");
+        System.out.println("第四次测试");
     }
 }
